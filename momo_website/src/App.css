@@ -639,6 +639,10 @@ body{
       height: 100%;
       overflow: visible;
     }
+    .momos_container .card3 .card_section2 .list{
+      font-size: var(--mini-font-size);
+      margin-top: 0.75rem;
+    }
     .momos_container .card3 .card_section1 img{
       height: 90%;
       width: 90%;
@@ -650,7 +654,10 @@ body{
       top: 15%;
     }
     .momos_container .card3 .card_section2 .buttons_section{
-      margin-top: 1rem;
+      margin-top: 0.85rem;
+    }
+    .momos_container .card3 .card_section2 .buttons_section button{
+      font-size: var(--description-font-size);
     }
 @media only screen and (max-width : 340px){
   .grid{
