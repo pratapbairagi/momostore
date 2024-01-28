@@ -4,7 +4,7 @@ import Heading1 from "../components/heading1";
 const Special = ({heading}) => {
     return (
         <div className="container special_container">
-            {/* <Heading1 title={headingTitle} clss={clss}/>             */}
+            {/* <Heading1 title={headingTitle} clss={clss}/> */}
             {heading}
             <div className="grid">
                 <div className="content">

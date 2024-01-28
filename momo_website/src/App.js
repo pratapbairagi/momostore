@@ -9,6 +9,7 @@ import Card2 from './components/card2';
 import Heading1 from './components/heading1';
 import Heading2 from './components/heading2';
 import Card3 from './components/card3';
+import MomosTypes from './sections/momosTypes';
 
 function App() {
   const cards1 = [
@@ -38,6 +39,8 @@ function App() {
           return <Card3 key={i} index={i} buyBtnName="buy" cartBtn={<i class="ri-shopping-cart-line"></i>} details={{ title: v.type, list: ["11 pices momos", "3 types of chatney", "meyonis"], price: v.price, plate: v.plate }} />
         })}
       />
+
+      <MomosTypes background='#F5F7F9'/>
     </div>
   );
 }
