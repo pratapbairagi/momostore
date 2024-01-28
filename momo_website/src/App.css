@@ -580,7 +580,7 @@ body{
       color: #FACDE6;
     }
     .momos_container .card2 .card_section2 .list{
-      font-size: calc( var(--mini-font-size) - 2px );
+      font-size: calc( var(--mini-font-size) - 1px );
       margin-top: 0.75rem;
     }
     .momos_container .card2 .card_section2 .price{
