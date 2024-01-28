@@ -642,6 +642,7 @@ body{
     .momos_container .card3 .card_section2 .list{
       font-size: var(--mini-font-size);
       margin-top: 0.75rem;
+      row-gap: 2px;
     }
     .momos_container .card3 .card_section1 img{
       height: 90%;
