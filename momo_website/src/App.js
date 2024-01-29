@@ -10,6 +10,7 @@ import Heading1 from './components/heading1';
 import Heading2 from './components/heading2';
 import Card3 from './components/card3';
 import MomosTypes from './sections/momosTypes';
+import ChatneyTypes from './sections/chatneyTypes';
 
 function App() {
   const cards1 = [
@@ -41,6 +42,8 @@ function App() {
       />
 
       <MomosTypes background='#F5F7F9'/>
+
+      <ChatneyTypes background='hsl(0, 0%, 100%)'/>
     </div>
   );
 }

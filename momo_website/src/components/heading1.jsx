@@ -2,7 +2,7 @@
 
 const Heading1 = ({clss="", title="", background=""}) => {
     return (
-        <h2 className={clss} >
+        <h2 className={clss} style={{backgroundColor:`${background == "#F5F7F9" ? "hsl(0, 0%, 100%)" : "#F5F7F9"}`}} >
             <span style={{backgroundColor:`${background == "#F5F7F9" ? "hsl(0, 0%, 100%)" : "#F5F7F9"}`}}></span> 
             <span>{title}</span> 
             <span style={{backgroundColor:`${background == "#F5F7F9" ? "hsl(0, 0%, 100%)" : "#F5F7F9"}`}}></span>
