@@ -705,7 +705,7 @@ body{
     /* chatney section */
     .chatneyTypes_container{
       position: relative;
-      overflow-x: hidden;
+      overflow: hidden;
     }
     .chatneyTypes_container > img:nth-child(1),
     .chatneyTypes_container > img:nth-child(2){
