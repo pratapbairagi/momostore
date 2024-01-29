@@ -790,15 +790,20 @@ body{
       justify-content: center;
       padding: 0;
       position: relative;
-      overflow-y: hidden;
+      overflow: hidden;
+
+    }
+    .testimonial_container .card .section1 .flex{
+      flex-direction: row;
+      justify-content: flex-start;
+      column-gap: 20%;
+      overflow-x: auto;
     }
     .testimonial_container .card .section1 .box{
       background-color: rgba(245, 245, 245, 0.648);
-      width: 90%;
+      width: 100%;
+      min-width: 100%;
       aspect-ratio: 1/0.5;
-      /* position: absolute; */
-      /* bottom: -3rem; */
-      
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -870,6 +875,9 @@ body{
       font-size: 2rem;
       color: #C82880;
       font-weight: 600;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
     }
 
 @media only screen and (max-width : 340px){
