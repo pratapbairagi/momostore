@@ -804,7 +804,7 @@ body{
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
-      column-gap: 2%;
+      column-gap: 8%;
       overflow: scroll;
       width: 100%;
       max-width: 100%;
@@ -876,11 +876,11 @@ body{
     }
     .testimonial_container .card .section1 .title{
       color: #C82880;
-      width: 90%;
+      width: 92%;
       margin: 0 ;
     }
     .testimonial_container .card .section1 .scroll_btns{
-      width: 90%;
+      width: 96%;
       display: flex;
       justify-content: flex-end;
       gap: 2rem;
