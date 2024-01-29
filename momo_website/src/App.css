@@ -783,6 +783,9 @@ body{
       padding: 0.5rem 0;
       border-radius: 6px;
     }
+    .testimonial_container .card:nth-child(2){
+      margin-top: 3rem;
+    }
     .testimonial_container .card .section1{
       display: flex;
       flex-direction: column;
@@ -791,18 +794,23 @@ body{
       padding: 0;
       position: relative;
       overflow: hidden;
-
     }
     .testimonial_container .card .section1 .flex{
+      display: flex;
       flex-direction: row;
       justify-content: flex-start;
-      column-gap: 20%;
-      overflow-x: auto;
+      column-gap: 2%;
+      overflow: scroll;
+      width: 90%;
+      max-width: 90%;
+      padding: 0.4rem;
+      z-index: 2;
     }
     .testimonial_container .card .section1 .box{
-      background-color: rgba(245, 245, 245, 0.648);
+      background-color: rgba(245, 245, 245, 0.65);
       width: 100%;
       min-width: 100%;
+      max-width: 100%;
       aspect-ratio: 1/0.5;
       display: flex;
       flex-direction: column;
@@ -810,7 +818,7 @@ body{
       justify-content: center;
       padding: 0 0.6rem;
       box-shadow: 2px 2px 10px var(--bright-color-3);
-      background-color: var(--bright-color-1);
+      /* background-color: var(--bright-color-1); */
       border-radius: 6px;
     }
     .testimonial_container .card .section1 .box p{
@@ -864,6 +872,7 @@ body{
     .testimonial_container .card .section1 .title{
       color: #C82880;
       width: 90%;
+      margin: 0 ;
     }
     .testimonial_container .card .section1 .scroll_btns{
       width: 90%;
