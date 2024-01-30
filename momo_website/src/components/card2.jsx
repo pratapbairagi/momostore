@@ -17,7 +17,7 @@ const Card2 = ({ details, buyBtnName, cartBtn, index = 0 }) => {
 
                             </div>
                             <div className="card_section2" style={{ order: `${index % 2 != 0 ? "1" : "2"}` }}>
-                                <h5 className="title">{v?.title}</h5>
+                                <h5 className="title">{v?.type}</h5>
                                 <div className="price"> <span>{v?.price}</span> </div>
                                 <ul className="list">
                                     {v?.list.map((val, ind) => {
@@ -54,7 +54,7 @@ const Card2 = ({ details, buyBtnName, cartBtn, index = 0 }) => {
 
                             </div>
                             <div className="card_section2" style={{ order: `${index % 2 != 0 ? "1" : "2"}` }}>
-                                <h5 className="title">{v?.title}</h5>
+                                <h5 className="title">{v?.type}</h5>
                                 <div className="price"> <span>{v?.price}</span> </div>
                                 <ul className="list">
                                     {v?.list.map((val, ind) => {

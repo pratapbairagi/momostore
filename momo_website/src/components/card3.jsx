@@ -16,7 +16,7 @@ const Card3 = ({ details, buyBtnName, cartBtn }) => {
                         <img src="/image/momos2.png" alt="chicken1" />
                     </div>
                     <div className="card_section2" style={{}}>
-                        <h5 className="title">{v?.title}</h5>
+                        <h5 className="title">{v?.type}</h5>
                         <div className="price"> <span>{v?.price}</span> </div>
                         <ul className="list">
                             {v?.list?.map((val, ind) => {
@@ -54,7 +54,7 @@ const Card3 = ({ details, buyBtnName, cartBtn }) => {
                         <img src="/image/momos2.png" alt="chicken1" />
                     </div>
                     <div className="card_section2" style={{}}>
-                        <h5 className="title">{v?.title}</h5>
+                        <h5 className="title">{v?.type}</h5>
                         <div className="price"> <span>{v?.price}</span> </div>
                         <ul className="list">
                             {v?.list?.map((val, ind) => {

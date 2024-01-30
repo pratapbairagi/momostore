@@ -20,7 +20,7 @@ const Card1 = ({ details, buyBtnName, cartBtn, index = 0 }) => {
                                 </div>
                             </div>
                             <div className="card_section2">
-                                <h5 className="title">{v?.title}</h5>
+                                <h5 className="title">{v?.type}</h5>
                                 <ul className="list">
                                     {v?.list.map((val, ind) => {
                                         return <li key={ind}>{val}</li>
@@ -57,7 +57,7 @@ const Card1 = ({ details, buyBtnName, cartBtn, index = 0 }) => {
                                 </div>
                             </div>
                             <div className="card_section2">
-                                <h5 className="title">{v?.title}</h5>
+                                <h5 className="title">{v?.type}</h5>
                                 <ul className="list">
                                     {v?.list.map((val, ind) => {
                                         return <li key={ind}>{val}</li>
