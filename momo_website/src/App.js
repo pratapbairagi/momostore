@@ -13,6 +13,7 @@ import MomosTypes from './sections/momosTypes';
 import ChatneyTypes from './sections/chatneyTypes';
 import Testimonial_section from './sections/testimonial';
 import Contact from './sections/contact';
+import About from './sections/about';
 
 function App() {
   const cards1 = [
@@ -49,7 +50,9 @@ function App() {
 
       <Testimonial_section background='#F5F7F9'/>
 
-      <Contact background='hsl(0, 0%, 100%)'/>
+      <About background='hsl(0, 0%, 100%)'/>
+
+      <Contact background='#F5F7F9'/>
     </div>
   );
 }
