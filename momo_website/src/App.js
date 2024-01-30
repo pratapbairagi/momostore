@@ -17,8 +17,8 @@ import About from './sections/about';
 
 function App() {
   const cards1 = [
-    { plate: "half", price: "40", type: "steam" },
-    { plate: "full", price: "70", type: "fried" }
+    { plate: "half", price: "40", type: "steam", list: ["11 pices momos", "3 types of chatney", "meyonis"] },
+    { plate: "full", price: "70", type: "fried", list: ["11 pices momos", "3 types of chatney", "meyonis"] }
   ]
   return (
     <div className="app">
@@ -27,32 +27,31 @@ function App() {
       <Special heading={<Heading1 title="Special" clss="heading1 heading" background="#F5F7F9" />} />
 
       <Momos_section heading={<Heading2 title="Chicken Momos" background="hsl(0, 0%, 100%)" />} background="hsl(0, 0%, 100%)" title="chicken momos" card={
-        cards1.map((v, i) => {
-          return <Card1 key={i} index={i} buyBtnName="buy" cartBtn={<i class="ri-shopping-cart-line"></i>} details={{ title: v.type, list: ["11 pices momos", "3 types of chatney", "meyonis"], price: v.price, plate: v.plate }} />
-        })}
+        <Card1 buyBtnName="buy" cartBtn={<i class="ri-shopping-cart-line"></i>} details={cards1} />
+      }
       />
 
       <Momos_section heading={<Heading2 title="Veg Momos" background="#F5F7F9" />} background="#F5F7F9" title="veg momos" card={
-        cards1.map((v, i) => {
-          return <Card2 key={i} index={i} buyBtnName="buy" cartBtn={<i class="ri-shopping-cart-line"></i>} details={{ title: v.type, list: ["11 pices momos", "3 types of chatney", "meyonis"], price: v.price, plate: v.plate }} />
-        })}
+        <Card2 buyBtnName="buy" cartBtn={<i class="ri-shopping-cart-line"></i>} details={cards1} />
+      }
       />
 
       <Momos_section heading={<Heading2 title="Paneer Momos" background="hsl(0, 0%, 100%)" />} background="hsl(0, 0%, 100%)" title="veg momos" card={
-        cards1.map((v, i) => {
-          return <Card3 key={i} index={i} buyBtnName="buy" cartBtn={<i class="ri-shopping-cart-line"></i>} details={{ title: v.type, list: ["11 pices momos", "3 types of chatney", "meyonis"], price: v.price, plate: v.plate }} />
-        })}
+
+        <Card3 buyBtnName="buy" cartBtn={<i class="ri-shopping-cart-line"></i>} details={cards1} />
+
+      }
       />
 
-      <MomosTypes background='#F5F7F9'/>
+      <MomosTypes background='#F5F7F9' />
 
-      <ChatneyTypes background='hsl(0, 0%, 100%)'/>
+      <ChatneyTypes background='hsl(0, 0%, 100%)' />
 
-      <Testimonial_section background='#F5F7F9'/>
+      <Testimonial_section background='#F5F7F9' />
 
-      <About background='hsl(0, 0%, 100%)'/>
+      <About background='hsl(0, 0%, 100%)' />
 
-      <Contact background='#F5F7F9'/>
+      <Contact background='#F5F7F9' />
     </div>
   );
 }

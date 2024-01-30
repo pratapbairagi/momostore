@@ -1002,14 +1002,14 @@ body {
   margin: 0;
 }
 
-.testimonial_container .card .section1 .scroll_btns {
+ .scroll_btns {
   width: 96%;
   display: flex;
   justify-content: flex-end;
   gap: 2rem;
 }
 
-.testimonial_container .card .section1 button {
+.scroll_btns button {
   font-size: 2rem;
   color: #C82880;
   font-weight: 600;
