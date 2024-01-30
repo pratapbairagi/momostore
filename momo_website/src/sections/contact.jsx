@@ -10,7 +10,7 @@ const Contact = ({ clss = "", title = "", background = "" }) => {
             <div className="grid">
                 <div className="section1">
                     <h6>Contact Info</h6>
-                    <table>
+                    <table cellSpacing="8px">
                        <tbody>
                         <tr>
                             <td>Email : </td>
@@ -25,7 +25,7 @@ const Contact = ({ clss = "", title = "", background = "" }) => {
                             <td>+91 8287889123</td>
                         </tr>
                         <tr>
-                            <td>Address</td>
+                            <td>Address : </td>
                             <td>Tughlakabad, Kalkaji, South Delhi</td>
                         </tr>
                         </tbody>

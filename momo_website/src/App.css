@@ -1096,7 +1096,7 @@ body {
 .contact_container .grid {
   grid-template-columns: repeat(1, 100%);
   margin-top: 2rem;
-  row-gap: 2rem;
+  row-gap: 3rem;
   padding: 0 1rem;
 }
 
@@ -1127,12 +1127,16 @@ body {
   max-width: 260px;
   row-gap: 1.3rem;
 }
-
+/* table{
+  border: 1px solid red;
+  display: flex !important;
+} */
 .contact_container .grid .section1 table tr td {
   color: #B2BBC6;
-  font-family: var(--font-family-kenia);
+  font-family:'Times New Roman', Times, serif;
   letter-spacing: 0.5px;
   word-wrap: break-word;
+  font-size: var(--description-font-size);
 }
 
 .contact_container .grid .section1 table tr td:nth-child(1) {
@@ -1156,7 +1160,9 @@ body {
 .contact_container .grid .section2 .flex fieldset label {
   position: absolute;
   font-size: var(--description-font-size);
-  font-family: var(--font-family-kenia);
+  /* font-family: var(--font-family-kenia); */
+  font-family:'Times New Roman', Times, serif;
+
   color: #B2BBC6;
   right: 1rem;
   top: -0.85rem;
