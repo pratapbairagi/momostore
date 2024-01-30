@@ -9,29 +9,29 @@ const Contact = ({ clss = "", title = "", background = "" }) => {
         
             <div className="grid">
                 <div className="section1">
+                    <img src="/image/contact-removebg-preview.png" alt="contact-removebg-preview" />
                     <h6>Contact Info</h6>
-                    <table cellSpacing="8px">
-                       <tbody>
-                        <tr>
-                            <td>Email : </td>
-                            <td>pratapbairagi4cgshop@gmail.com</td>
-                        </tr>
-                        <tr>
-                        <td>Phone No. </td>
-                            <td>+91 8287889123</td>
-                        </tr>
-                        <tr>
-                            <td>Whatsapp : </td>
-                            <td>+91 8287889123</td>
-                        </tr>
-                        <tr>
-                            <td>Address : </td>
-                            <td>Tughlakabad, Kalkaji, South Delhi</td>
-                        </tr>
-                        </tbody>
-                    </table>
+                    <div className="flex">
+                        <div className="row">
+                            <span>Email : </span>
+                            <span>pratapbairagi4cgshop@gmail.com</span>
+                        </div>
+                        <div className="row">
+                        <span>Phone No. </span>
+                            <span>+91 8287889123</span>
+                        </div>
+                        <div className="row">
+                            <span>Whatsapp : </span>
+                            <span>+91 8287889123</span>
+                        </div>
+                        <div className="row">
+                            <span>Address : </span>
+                            <span>Tughlakabad, Kalkaji, South Delhi</span>
+                        </div>
+                    </div>
                 </div>
                 <div className="section2">
+                    <img src="/image/message-removebg-preview.png" alt="message-removebg-preview" />
                     <h6>Message Us</h6>
                     <div className="flex">
                         <fieldset>
