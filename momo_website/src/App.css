@@ -261,11 +261,15 @@ body {
 }
 
 /* hero */
+.hero_container{
+  overflow: hidden;
+  max-width: 100%;
+}
 .hero_part1 {
   height: 35dvh;
   width: 100%;
   max-width: 100% !important;
-  overflow: hidden !important;
+  overflow: hidden ;
 }
 
 .hero_part1 img {
@@ -353,6 +357,7 @@ body {
   color: #C82880;
   display: flex;
   justify-content: center;
+  text-shadow: 1px 1px 2px var(--dark-color-3);
 }
 
 .heading1 span:nth-child(1),
@@ -409,7 +414,6 @@ body {
 .special_container {
   background-color: var(--bright-color-2);
   padding: 3rem 0;
-  /* border: 1px solid red; */
 }
 
 .special_container .grid {
@@ -446,13 +450,16 @@ body {
 
 .special_container .grid .content:nth-child(2) {
   position: relative;
-  height: 10rem;
+  /* height: 10rem; */
+  aspect-ratio: 1/0.4;
+  border: 1px solid red;
 }
 
 .special_container .grid .content:nth-child(2) img {
   position: absolute;
   width: 100%;
-  height: 10rem;
+  height: 100%;
+  /* height: 10rem; */
   top: 0;
   left: 0;
 }
@@ -528,11 +535,13 @@ body {
   grid-template-columns: repeat(2, 45%);
   column-gap: 0.4rem;
   justify-content: center;
+  aspect-ratio: 1/0.5;
 }
 
 .momos_container .card .card_section1,
 .momos_container .card .card_section2 {
-  height: 12.5rem;
+  /* height: 12.5rem; */
+  height: 100%;
   box-shadow: 4px 4px 5px var(--bright-color-3);
   border-radius: 4px;
 }
@@ -541,6 +550,10 @@ body {
   background-color: var(--bright-color-2);
   position: relative !important;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 4vw;
 }
 
 .momos_container .card .card_section2 img {
@@ -554,23 +567,27 @@ body {
 .momos_container .card .card_section1 img {
   width: 100%;
   object-fit: contain;
-  height: 75%;
+  height: 74%;
 }
 
 .momos_container .card .buttons_section {
   display: flex;
   margin: 0;
+  flex-direction: row;
   height: 25%;
 }
 
-.momos_container .card .buttons_section button {
-  font-size: calc(var(--description-font-size) - 2px);
+.momos_container .card1 .buttons_section button {
+  /* font-size: calc(var(--description-font-size) - 2px); */
+  font-size: 3.75vw;
   font-weight: 500;
   color: #C82880;
   border: 1px solid #C82880;
-  padding: 0.1rem 1rem;
+  /* padding: 0.1rem 1rem; */
+  padding: 0.1vw 1.75vw;
   background: transparent;
   font-family: var(--font-family-kavoon);
+  margin: 0;
 }
 
 .momos_container .card .buttons_section button:nth-child(2) {
@@ -582,40 +599,48 @@ body {
 .momos_container .card .card_section2 .title {
   color: #C82880;
   font-family: var(--font-family-kenia);
-  font-size: calc(var(--title-font-size) - 1px);
+  /* font-size: calc(var(--title-font-size) - 1px); */
+  font-size: 4.5vw;
   letter-spacing: 0.5px;
   text-align: center;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   text-transform: capitalize;
 }
 
-.momos_container .card .card_section2 .list {
+
+.momos_container .card1 .card_section2 .list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 }
 
-.momos_container .card .card_section2 .list li {
+.momos_container .card1 .card_section2 .list li {
   font-family: var(--font-family-kenia);
   color: var(--bright-color-6);
+  font-size: 4vw;
+  font-weight: 500 ;
 }
 
+
 .momos_container .card .card_section2 .price {
-  margin-top: 1.25rem;
+  /* margin-top: 1.25rem; */
   display: flex;
   justify-content: center;
 }
 
 .momos_container .card .card_section2 .price span {
-  width: 2.5rem;
+  /* width: 2.5rem; */
+  width: 27%;
   aspect-ratio: 1/1;
   background-color: #C82880;
   color: var(--bright-color-2);
   display: grid;
   place-items: center;
   align-items: center;
-  font-size: var(--subheading-font-size);
+  /* font-size: var(--subheading-font-size); */
+  font-size: 6vw;
+
   letter-spacing: 0.5px;
   border-radius: 50%;
   font-weight: 700;
@@ -642,6 +667,7 @@ body {
 .momos_container .card2 {
   box-shadow: 4px 4px 6px var(--bright-color-4);
   width: 96%;
+  aspect-ratio: 1/0.4;
   margin: 0 auto;
   padding: 0.5rem 0;
   background-color: var(--bright-color-1);
@@ -650,10 +676,17 @@ body {
 
 .momos_container .card2 .card_section1,
 .momos_container .card2 .card_section2 {
-  height: 9rem;
+  /* height: 9rem; */
+  height: 100%;
   width: 100%;
   box-shadow: none;
   background-color: transparent;
+}
+
+.momos_container .card2 .card_section2{
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
 }
 
 .momos_container .card2 .card_section1 img {
@@ -664,39 +697,50 @@ body {
 }
 
 .momos_container .card2 .card_section2 .title {
-  font-size: calc(var(--subtitle-font-size) - 1px);
-  margin-top: 0.4rem;
+  /* font-size: calc(var(--subtitle-font-size) - 1px); */
+  font-size: 5vw;
+  /* margin-top: 0.4rem; */
   color: #FACDE6;
 }
 
 .momos_container .card2 .card_section2 .list {
-  font-size: calc(var(--mini-font-size) - 1px);
-  margin-top: 0.75rem;
+  /* font-size: calc(var(--mini-font-size) - 1px); */
+  font-size: 2vw;
+  /* margin-top: 0.75rem; */
+}
+.momos_container .card2 .card_section2 .list li{
+  font-size: 3vw;
 }
 
 .momos_container .card2 .card_section2 .price {
   width: 100%;
-  height: 1.7rem;
-  margin-top: 0.5rem;
+  /* height: 1.7rem; */
+  /* margin-top: 0.5rem; */
   justify-content: center;
+  /* border: 1px solid red; */
 }
 
 .momos_container .card2 .card_section2 .price span {
-  font-size: 0.8rem;
+  /* font-size: 0.8rem; */
   /* line-height: 1.49rem; */
   text-align: center;
-  width: 1.5rem;
-  height: 1.5rem;
+  font-size: 4vw;
+  width: 8vw;
+  /* width: 1.5rem; */
+  /* height: 1.5rem; */
 }
 
 .momos_container .card2 .card_section2 .buttons_section {
   height: max-content;
-  margin-top: 0.5rem;
+  margin: 0;
+  /* margin-top: 0.5rem; */
 }
 
 .momos_container .card2 .card_section2 .buttons_section button {
-  font-size: calc(var(--mini-font-size) - 2px);
-  padding: 0.1rem 1rem;
+  /* font-size: calc(var(--mini-font-size) - 2px); */
+  font-size: 4vw;
+
+  padding: 0.15vw 2vw;
 }
 
 .momos_container .card2 .card_section2 img {
@@ -710,6 +754,7 @@ body {
   box-shadow: 4px 4px 6px var(--bright-color-4);
   width: 96%;
   margin: 0 auto;
+  aspect-ratio: 1/0.45;
   padding: 0.5rem 0;
   background-color: var(--bright-color-1);
   border-radius: 400px;
@@ -719,35 +764,61 @@ body {
   background-color: var(--bright-color-2);
   overflow: hidden;
 
-  /* border: 1px solid red; */
+  min-width: 100%;
+  border-radius: 19vw;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 2vw;
 }
 
 .momos_container .card3 .card_section1 {
-  height: 100%;
+  height: 90%;
+  width: initial;
   aspect-ratio: 1/1;
   border-radius: 50%;
   /* transform: translateX(-4%); */
   display: grid;
   place-items: center;
-  padding: 0 0 0.2rem 0;
+  /* padding: 0 0 0.2rem 0; */
   background-color: var(--bright-color-1);
+  transform: initial !important;
+  margin: 0;
+}
+.momos_container .card3 .card_section2 .title{
+  font-size: 4vw;
 }
 
 .momos_container .card3 .card_section2 {
   height: 100%;
   overflow: visible;
+  gap: 1.75vw;
+
 }
 
 .momos_container .card3 .card_section2 .list {
   font-size: var(--mini-font-size);
-  margin-top: 0.75rem;
-  row-gap: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 0.75rem; */
+  /* row-gap: 2px; */
+}
+.momos_container .card3 .card_section2 .list li{
+  font-size: 3vw;
+  font-family: var(--font-family-kenia);
+  color: #B2BBC6;
 }
 
 .momos_container .card3 .card_section1 img {
   height: 90%;
   width: 90%;
   border-radius: 50%;
+  margin: 0;
+  /* border: 1px solid red; */
 }
 
 .momos_container .card3 .card_section2 img {
@@ -757,11 +828,21 @@ body {
 }
 
 .momos_container .card3 .card_section2 .buttons_section {
-  margin-top: 0.85rem;
+  /* margin-top: 0.85rem; */
+  margin: 0;
 }
 
 .momos_container .card3 .card_section2 .buttons_section button {
-  font-size: var(--description-font-size);
+  font-size: 4vw;
+  background-color: transparent;
+  border: 1px solid #C82880;
+  color:#C82880;
+  font-family: var(--font-family-kavoon);
+}
+.momos_container .card3 .card_section2 .buttons_section button:nth-child(2) {
+  background-color: #C82880;
+  color: var(--bright-color-2);
+
 }
 
 /* momos type */
@@ -1222,16 +1303,103 @@ body {
   border-radius: 4px;
 }
 
-@media only screen and (max-width : 340px) {
+@media only screen and (min-width : 340px) and (max-width : 470px) {
   .grid {
     display: grid;
     grid-template-columns: repeat(1, 2fr);
   }
+
+  /* hero */
+  .hero_part2 h4 {
+    font-size: calc(var(--title-font-size) + 2.5px);
+    margin-top: 1.8rem;
+  }
+  
+  .hero_part2 h1 {
+    font-size: calc( var(--heading-font-size) + 0.5px );
+    margin-top: 0.5rem;
+  }
+  .hero_part2 p {
+    margin-top: 1.3rem;
+    font-size: 18.5px;
+  }
+  .buttons_section img {
+    width: 5.3rem;
+  }
+  
+  .hero_container .hero_part2 .buttons_section button {
+    height: max-content;
+    padding: 0.3rem 1.3rem;
+    font-size: calc(var(--description-font-size) - 2.5px);
+    left: 0.5px;
+  }
+
+  /* heading */
+  /* heading 1 */
+.heading1,
+.heading2 {
+  padding: 0.5rem 3.75rem;
+  font-size: calc( var(--subheading-font-size) + 0.5px );
 }
 
-@media only screen and (max-width : 767px) {
+.heading1 span:nth-child(1),
+.heading1 span:nth-child(3) {
+  height: 4.5px;
+  width: 35%;
+  left: -35%;
+}
+
+.heading1 span:nth-child(3) {
+  left: initial;
+  right: -35%;
+}
+
+/* heading 2 */
+.heading2 {
+  width: 11.75rem;
+  height: 2.9rem;
+  font-size: calc( var(--subtitle-font-size) + 0.5px );
+}
+
+.heading2 span:nth-child(1),
+.heading2 span:nth-child(3) {
+  height: 4.5px;
+  width: 35%;
+  top: calc(2.9rem /2 - 4.5px / 2);
+  left: -39%;
+}
+
+.heading2 span:nth-child(3) {
+  left: initial;
+  right: -39%;
+}
+
+  /* special */
+
+  /* card1 */
+  /* .momos_container .card .buttons_section button {
+    font-size: calc(var(--description-font-size) - 1.5px);
+    padding: 0.15rem 1.2rem;
+  }
+  .momos_container .card .card_section2 .title {
+    font-size: calc(var(--title-font-size) - 0.5px);
+    letter-spacing: 0.75px;
+  }
+  
+  .momos_container .card .card_section2 .list {
+  }
+  
+  .momos_container .card .card_section2 .price {
+  } */
+
+}
+
+@media only screen and (min-width : 471px) {
   .grid {
     display: grid;
     grid-template-columns: repeat(1, 2fr);
   }
+
+  /* hero */
+  
 }

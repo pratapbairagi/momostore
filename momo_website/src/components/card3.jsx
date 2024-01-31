@@ -11,7 +11,7 @@ const Card3 = ({ details, buyBtnName, cartBtn }) => {
 
         <div className="flex" style={{ flexDirection: "row", overflowX: "auto", gap: "20%", padding:"1rem 0.3rem" }}>
             {details.map((v, i) => {
-                return <div key={i} className="card card2 card3" style={{ minWidth: "100%", borderRadius:"90px", borderTopLeftRadius:"0", borderBottomRightRadius:"0" }}>
+                return <div key={i} className="card card2 card3">
                     <div className="card_section1" style={{}}>
                         <img src="/image/momos2.png" alt="chicken1" />
                     </div>
@@ -48,7 +48,7 @@ const Card3 = ({ details, buyBtnName, cartBtn }) => {
         <div className="flex" style={{ flexDirection: "row", overflowX: "auto", gap: "20%", padding:"1rem 0.3rem" }}>
             {details.map((v, i) => {
                 // return <div key={i} className="card card2 card3" style={{ minWidth: "100%" }}>
-                return <div key={i} className="card card2 card3" style={{ minWidth: "100%", borderRadius:"90px", borderTopLeftRadius:"0", borderBottomRightRadius:"0" }}>
+                return <div key={i} className="card card2 card3">
                    
                    <div className="card_section1" style={{}}>
                         <img src="/image/momos2.png" alt="chicken1" />
