@@ -285,7 +285,7 @@ body {
   flex-direction: column;
   height: max-content;
   min-height: 60dvh;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   gap: 2vw;
 }
@@ -296,7 +296,7 @@ body {
   /* font-size: calc(var(--title-font-size) + 2px); */
   font-size: 5vw;
   margin: 0;
-  margin-top: 4vw;
+  /* margin-top: 4vw; */
   letter-spacing: 0.5px;
   /* margin-top: 1.75rem; */
 }
@@ -334,9 +334,10 @@ body {
   align-items: center;
   width: 100%;
   /* max-width: 400px; */
-  margin-top: 15vw;
+  margin-top: 16vw;
   overflow: hidden;
   padding: 0;
+  /* margin-top: auto; */
 }
 
 .buttons_section img {
@@ -562,6 +563,7 @@ body {
   column-gap: 0.4rem;
   justify-content: center;
   aspect-ratio: 1/0.5;
+  min-width: 100%;
 }
 
 .momos_container .card .card_section1,
@@ -1430,7 +1432,7 @@ body {
 
   /* hero */
   .hero_part1 {
-    height: 40dvh;
+    height: 35dvh;
   }
   
   .hero_container .hero_part2 .buttons_section button {
@@ -1501,6 +1503,34 @@ body {
     font-size: 1rem;
   }
 
+  /* card */
+.momos_container .grid .row{
+  gap: 1vw;
+  /* border: 1px solid red; */
+  flex-direction: row; 
+  overflow-x: auto;
+  padding: 1rem 0.3rem;
+}
+  .momos_container .card {
+    min-width: 50%;
+  }
+  .momos_container .card .card_section2{
+    gap: 2vw;
+  }
+  .momos_container .card .card_section2 .title {
+    font-size: 3vw;
+  }
+.momos_container .card1 .card_section2 .list li {
+  font-size: 2vw;
+}
+
+.momos_container .card1 .card_section2 .price span {
+  font-size: 3vw;
+}
+.momos_container .card1 .buttons_section button {
+  font-size: 2vw;
+}
+
   /* special */
   .special_container .grid{
     /* max-width: 560px; */
@@ -1529,6 +1559,9 @@ body {
   .special_container .grid .content .detail p{
     font-size: 2vw;
   }
+
+  /* card1 */
+
 
 }
 

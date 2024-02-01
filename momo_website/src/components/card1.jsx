@@ -9,9 +9,9 @@ const Card1 = ({ details, buyBtnName, cartBtn, index = 0 }) => {
                     <span style={{ width: "1rem", height: "1rem", backgroundColor: "#C82880" }}></span>
                 </div>
 
-                <div className="flex" style={{ flexDirection: "row", overflowX: "auto", gap: "20%", padding: "1rem 0.3rem" }}>
+                <div className="flex row" >
                     {details.map((v, i) => {
-                        return <div className="card card1" style={{minWidth:"100%"}}>
+                        return <div className="card card1">
                             <div className="card_section1">
                                 <img src="/image/chicken1.png" alt="chicken1" />
                                 <div className="buttons_section">
@@ -46,9 +46,9 @@ const Card1 = ({ details, buyBtnName, cartBtn, index = 0 }) => {
                     <span style={{ width: "1rem", height: "1rem", backgroundColor: "#C82880" }}></span>
                 </div>
 
-                <div className="flex" style={{ flexDirection: "row", overflowX: "auto", gap: "20%", padding: "1rem 0.3rem" }}>
+                <div className="flex row" >
                     {details.map((v, i) => {
-                        return <div className="card card1" style={{minWidth:"100%"}}>
+                        return <div className="card card1">
                             <div className="card_section1">
                                 <img src="/image/chicken1.png" alt="chicken1" />
                                 <div className="buttons_section">
