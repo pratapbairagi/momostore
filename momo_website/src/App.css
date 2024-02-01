@@ -347,17 +347,29 @@ body {
 .hero_container .hero_part2 .buttons_section button {
   height: max-content;
   /* padding: 0.2rem 1.2rem; */
-  padding: 0.2vw 3vw 0 3vw;
+  /* padding: 0.2vw 3vw 0 3vw; */
   /* font-size: calc(var(--description-font-size) - 2px); */
-  font-size: 5vw;
+  /* font-size: 5vw; */
   font-family: var(--font-family-kenia);
   background-color: #FCFDFD;
   color: #C82880;
   left: 0.3px;
   border-radius: 2px;
   border: 2px solid #C82880;
-  display: flex;
+  /* display: flex;
   align-items: center;
+  justify-content: center; */
+  font-size: 4vw;
+  width: 16vw;
+  max-width: 20vw;
+  height: 7vw;
+  max-height: 8.75vw;
+
+  line-height: 150%;
+  /* aspect-ratio: 1/0.2; */
+  padding: 0 !important;
+  font-weight: 500;
+  
 }
 
 /* heading 1 */
