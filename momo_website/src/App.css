@@ -1481,7 +1481,7 @@ body {
   }
   
   .hero_container .hero_part2 .buttons_section button {
-    padding: 0.1vw 1.2vw;
+    padding: 0 1.2vw;
     /* font-size: calc(var(--description-font-size) - 2px); */
     font-size: 1.5vw;
   }
