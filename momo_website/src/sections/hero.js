@@ -12,9 +12,9 @@ const Hero = () => {
                 <h1> MOMOS <span> HOUSE </span> </h1>
                 <p>We provide variety of momos with different taste and prices, taste once and remeber forever.</p>
                 <div className="flex buttons_section">
-                    <button >Menu</button>
+                    <button >MENU</button>
                     <img src="/image/chef1-removebg-preview.png" alt="chef1-removebg-preview"/>
-                    <button >Order</button>
+                    <button >ORDER</button>
                 </div>
             </div>
         </section>
