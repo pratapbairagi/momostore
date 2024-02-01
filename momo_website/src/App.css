@@ -324,7 +324,8 @@ body {
   text-align: center;
   /* font-size: 18px; */
   font-size: 4.5vw !important;
-  margin-top: 3vw;
+  margin-top: 4vw;
+  line-height: 3.5vh;
 }
 
 .buttons_section {
@@ -1320,7 +1321,7 @@ body {
   border-radius: 4px;
 }
 
-@media only screen and (min-width : 340px) and (max-width : 470px) {
+@media only screen and (min-width : 340px) {
   .grid {
     display: grid;
     grid-template-columns: repeat(1, 2fr);
@@ -1420,7 +1421,6 @@ body {
   /* hero */
   .hero_part1 {
     height: 40dvh;
-    border: 1px solid red;
   }
   
 }
