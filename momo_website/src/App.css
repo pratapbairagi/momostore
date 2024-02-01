@@ -347,7 +347,7 @@ body {
 .hero_container .hero_part2 .buttons_section button {
   height: max-content;
   /* padding: 0.2rem 1.2rem; */
-  padding: 0.3vw 4vw;
+  padding: 0 4vw;
   /* font-size: calc(var(--description-font-size) - 2px); */
   font-size: 5vw;
   font-family: var(--font-family-kenia);
@@ -356,6 +356,8 @@ body {
   left: 0.3px;
   border-radius: 2px;
   border: 2px solid #C82880;
+  display: flex;
+  align-items: center;
 }
 
 /* heading 1 */
