@@ -284,7 +284,7 @@ body {
 .hero_part2 {
   flex-direction: column;
   height: max-content;
-  min-height: 40dvh;
+  min-height: 60dvh;
   justify-content: flex-start;
   align-items: center;
   gap: 2vw;
@@ -334,7 +334,7 @@ body {
   align-items: center;
   width: 100%;
   /* max-width: 400px; */
-  margin-top: 12vw;
+  margin-top: 15vw;
   overflow: hidden;
   padding: 0;
 }
@@ -1433,6 +1433,12 @@ body {
     height: 40dvh;
   }
   
+  .hero_container .hero_part2 .buttons_section button {
+    font-size: 1.5rem;
+    padding: 0.25rem 1rem !important;
+    font-weight: 500;
+  }
+  
 }
 
 @media only screen and (min-width : 767px) {
@@ -1461,26 +1467,27 @@ body {
   
   .hero_part2 {
     height: 100%;
-    min-height: 50dvh;
-    max-height: 80dvh;
+    min-height: 40dvh;
     gap: 1vw;
+    justify-content: center;
   }
 
   .hero_part2 h4 {
-    font-size: 2vw;
+    font-size: 3vw;
     margin-top: 1.5vw;
   }
   
   .hero_part2 h1 {
-    font-size: 3vw;
+    font-size: 4.5vw;
   }
   
   .hero_part2 p {
-    font-size:2vw !important;
-    margin-top: 1vw;
+    font-size:3vw !important;
+    margin-top: 4vw;
+    line-height: 3.5vw;
   }
-  .buttons_section {
-    margin-top: 3vw;
+  .hero_container .buttons_section {
+    margin-top: 6vw;
   }
   
   .buttons_section img {
@@ -1491,7 +1498,7 @@ body {
   .hero_container .hero_part2 .buttons_section button {
     padding: 0 1.2vw;
     /* font-size: calc(var(--description-font-size) - 2px); */
-    font-size: 1.5vw;
+    font-size: 1rem;
   }
 
   /* special */
