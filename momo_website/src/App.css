@@ -94,7 +94,7 @@ body {
   /* display: flex; */
   width: 100%;
   height: max-content !important;
-  min-height: 100vh;
+  min-height: 60dvh;
   padding: 3rem 0;
   padding-bottom: 3rem;
   overflow: hidden;
@@ -107,7 +107,10 @@ body {
 
 .flex {
   display: flex;
-  padding: 1rem;
+  padding: 0 1rem;
+  row-gap: 0.5rem;
+  /* border: 1px solid red; */
+
 }
 
 /* nav */
@@ -567,10 +570,9 @@ body {
 }
 .momos_container .grid .row{
   gap: 20%;
-  /* border: 1px solid red; */
   flex-direction: row; 
   overflow-x: auto;
-  padding: 1rem 0.3rem;
+  padding: 0.5rem 0.3rem;
 }
 .momos_container .card .card_section1,
 .momos_container .card .card_section2 {

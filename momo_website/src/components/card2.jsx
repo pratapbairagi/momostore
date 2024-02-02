@@ -4,10 +4,10 @@ const Card2 = ({ details, buyBtnName, cartBtn, index = 0 }) => {
     return (
         <div className="flex" style={{ flexDirection: "column", padding: "0" }}>
             <div className="flex" style={{ flexDirection: "column" }}>
-                <div className="scroll_dots flex" style={{ padding: "0 1rem", gap: "1rem" }}>
+                {/* <div className="scroll_dots flex" style={{ padding: "0 1rem", gap: "1rem" }}>
                     <span style={{ width: "1rem", height: "1rem", backgroundColor: "#C82880", border: "2px solid white", boxShadow: " 0 0 0 1px #C82880" }}></span>
                     <span style={{ width: "1rem", height: "1rem", backgroundColor: "#C82880" }}></span>
-                </div>
+                </div> */}
 
                 <div className="flex" style={{ flexDirection: "row", overflowX: "auto", gap: "20%", padding: "1rem 0.3rem" }}>
                     {details.map((v, i) => {
@@ -34,17 +34,23 @@ const Card2 = ({ details, buyBtnName, cartBtn, index = 0 }) => {
                         </div>
                     })}
                 </div>
-                <div className="scroll_btns">
+                <div className="scroll_btns" style={{ justifyContent:"center"}}>
                     <button><i class="ri-arrow-left-s-line"></i></button>
+                    <div className="scroll_dots flex" style={{ padding: "0 1rem", gap: "1rem", alignItems:"center" }}>
+                    <span style={{ width: "2rem", height: "1rem", backgroundColor: "#C82880", border: "2px solid white", boxShadow: " 0 0 0 1px #C82880", fontSize:"8px", textAlign:"center", color:"var(--bright-color-2)", fontWeight:"600" }}>
+                        Half
+                    </span>
+                    <span style={{ width: "2rem", height: "1rem", lineHeight:"1rem", backgroundColor: "#C82880" , fontSize:"8px", textAlign:"center", color:"var(--bright-color-2)", fontWeight:"600" }}>Full</span>
+                </div>
                     <button><i class="ri-arrow-right-s-line"></i></button>
                 </div>
             </div>
 
             <div className="flex" style={{ flexDirection: "column" }}>
-                <div className="scroll_dots flex" style={{ padding: "0 1rem", gap: "1rem" }}>
+                {/* <div className="scroll_dots flex" style={{ padding: "0 1rem", gap: "1rem" }}>
                     <span style={{ width: "1rem", height: "1rem", backgroundColor: "#C82880", border: "2px solid white", boxShadow: " 0 0 0 1px #C82880" }}></span>
                     <span style={{ width: "1rem", height: "1rem", backgroundColor: "#C82880" }}></span>
-                </div>
+                </div> */}
 
                 <div className="flex" style={{ flexDirection: "row", overflowX: "auto", gap: "20%", padding: "1rem 0.3rem" }}>
                     {details.map((v, i) => {
@@ -71,8 +77,14 @@ const Card2 = ({ details, buyBtnName, cartBtn, index = 0 }) => {
                         </div>
                     })}
                 </div>
-                <div className="scroll_btns">
+                <div className="scroll_btns" style={{ justifyContent:"center"}}>
                     <button><i class="ri-arrow-left-s-line"></i></button>
+                    <div className="scroll_dots flex" style={{ padding: "0 1rem", gap: "1rem", alignItems:"center" }}>
+                    <span style={{ width: "2rem", height: "1rem", backgroundColor: "#C82880", border: "2px solid white", boxShadow: " 0 0 0 1px #C82880", fontSize:"8px", textAlign:"center", color:"var(--bright-color-2)", fontWeight:"600" }}>
+                        Half
+                    </span>
+                    <span style={{ width: "2rem", height: "1rem", lineHeight:"1rem", backgroundColor: "#C82880" , fontSize:"8px", textAlign:"center", color:"var(--bright-color-2)", fontWeight:"600" }}>Full</span>
+                </div>
                     <button><i class="ri-arrow-right-s-line"></i></button>
                 </div>
             </div>
