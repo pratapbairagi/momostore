@@ -36,10 +36,10 @@ const Card3 = ({ details, buyBtnName, cartBtn }) => {
         <div className="scroll_btns" style={{ justifyContent:"center"}}>
                     <button><i class="ri-arrow-left-s-line"></i></button>
                     <div className="scroll_dots flex" style={{ padding: "0 1rem", gap: "1rem", alignItems:"center" }}>
-                    <span style={{ width: "2rem", height: "1rem", lineHeight:"1rem", backgroundColor: "#C82880", border: "2px solid white", boxShadow: " 0 0 0 1px #C82880", fontSize:"8px", textAlign:"center", color:"var(--bright-color-2)", fontWeight:"600" }}>
+                    <span style={{ width: "2rem", height: "1rem", alignItems:"center", display:"flex", justifyContent:"center", backgroundColor: "#C82880", border: "2px solid white", boxShadow: " 0 0 0 1px #C82880", fontSize:"8px", textAlign:"center", color:"var(--bright-color-2)", fontWeight:"600" }}>
                         Half
                     </span>
-                    <span style={{ width: "2rem", height: "1rem", lineHeight:"1rem", backgroundColor: "#C82880" , fontSize:"8px", textAlign:"center", color:"var(--bright-color-2)", fontWeight:"600" }}>Full</span>
+                    <span style={{ width: "2rem", height: "1rem", alignItems:"center", display:"flex", justifyContent:"center", backgroundColor: "#C82880" , fontSize:"8px", textAlign:"center", color:"var(--bright-color-2)", fontWeight:"600" }}>Full</span>
                 </div>
                     <button><i class="ri-arrow-right-s-line"></i></button>
                 </div>
@@ -80,10 +80,10 @@ const Card3 = ({ details, buyBtnName, cartBtn }) => {
         <div className="scroll_btns" style={{ justifyContent:"center"}}>
                     <button><i class="ri-arrow-left-s-line"></i></button>
                     <div className="scroll_dots flex" style={{ padding: "0 1rem", gap: "1rem", alignItems:"center" }}>
-                    <span style={{ width: "2rem", height: "1rem", lineHeight:"1rem", backgroundColor: "#C82880", border: "2px solid white", boxShadow: " 0 0 0 1px #C82880", fontSize:"8px", textAlign:"center", color:"var(--bright-color-2)", fontWeight:"600" }}>
+                    <span style={{ width: "2rem", height: "1rem", alignItems:"center", display:"flex", justifyContent:"center", backgroundColor: "#C82880", border: "2px solid white", boxShadow: " 0 0 0 1px #C82880", fontSize:"8px", textAlign:"center", color:"var(--bright-color-2)", fontWeight:"600" }}>
                         Half
                     </span>
-                    <span style={{ width: "2rem", height: "1rem", lineHeight:"1rem", backgroundColor: "#C82880" , fontSize:"8px", textAlign:"center", color:"var(--bright-color-2)", fontWeight:"600" }}>Full</span>
+                    <span style={{ width: "2rem", height: "1rem", alignItems:"center", display:"flex", justifyContent:"center", backgroundColor: "#C82880" , fontSize:"8px", textAlign:"center", color:"var(--bright-color-2)", fontWeight:"600" }}>Full</span>
                 </div>
                     <button><i class="ri-arrow-right-s-line"></i></button>
                 </div>
