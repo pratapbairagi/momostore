@@ -9,7 +9,7 @@ const Card3 = ({ details, buyBtnName, cartBtn }) => {
                 <span style={{width:"1rem", height:"1rem", backgroundColor:"#C82880"}}></span>
             </div>
 
-        <div className="flex" style={{ flexDirection: "row", overflowX: "auto", gap: "20%", padding:"1rem 0.3rem" }}>
+        <div className="flex row">
             {details.map((v, i) => {
                 return <div key={i} className="card card2 card3">
                     <div className="card_section1" style={{}}>
@@ -45,7 +45,7 @@ const Card3 = ({ details, buyBtnName, cartBtn }) => {
                 <span style={{width:"1rem", height:"1rem", backgroundColor:"#C82880"}}></span>
             </div>
 
-        <div className="flex" style={{ flexDirection: "row", overflowX: "auto", gap: "20%", padding:"1rem 0.3rem" }}>
+        <div className="flex row">
             {details.map((v, i) => {
                 // return <div key={i} className="card card2 card3" style={{ minWidth: "100%" }}>
                 return <div key={i} className="card card2 card3">

@@ -565,7 +565,13 @@ body {
   aspect-ratio: 1/0.5;
   min-width: 100%;
 }
-
+.momos_container .grid .row{
+  gap: 20%;
+  /* border: 1px solid red; */
+  flex-direction: row; 
+  overflow-x: auto;
+  padding: 1rem 0.3rem;
+}
 .momos_container .card .card_section1,
 .momos_container .card .card_section2 {
   /* height: 12.5rem; */
@@ -787,7 +793,7 @@ body {
   aspect-ratio: 1/0.45;
   padding: 0.5rem 0;
   background-color: var(--bright-color-1);
-  border-radius: 400px;
+  /* border-radius: 400px; */
   border-bottom-right-radius: 0;
   position: relative;
   align-items: center;
@@ -1528,6 +1534,76 @@ body {
   font-size: 3vw;
 }
 .momos_container .card1 .buttons_section button {
+  font-size: 2vw;
+}
+
+/* card3 */
+.momos_container .card3 {
+  border-radius: 11vw;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 0 1.5vw;
+  aspect-ratio: 1/0.55;
+
+}
+.momos_container .grid .row{
+  gap: 1vw;
+  padding: 1rem 0.3rem;
+}
+.momos_container .card3 .card_section2{
+  gap: 1.5vw;
+}
+.momos_container .card3 .card_section2 .title{
+  font-size: 3vw;
+}
+.momos_container .card3 .card_section2  .price span{
+  font-size: 2vw;
+  width: 4vw;
+};
+
+.momos_container .card3 .card_section2 {
+  height: 100%;
+  overflow: visible;
+  gap: 1.75vw;
+
+}
+
+.momos_container .card3 .card_section2 .list {
+  font-size: var(--mini-font-size);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* margin-top: 0.75rem; */
+  /* row-gap: 2px; */
+}
+.momos_container .card3 .card_section2 .list li{
+  font-size: 2vw;
+  font-family: var(--font-family-kenia);
+  color: #B2BBC6;
+}
+
+.momos_container .card3 .card_section1 img {
+  height: 90%;
+  width: 90%;
+  border-radius: 50%;
+  margin: 0;
+  /* border: 1px solid red; */
+}
+
+.momos_container .card3 .card_section2 img {
+  height: 130%;
+  width: 130%;
+  top: 15%;
+}
+
+.momos_container .card3 .card_section2 .buttons_section {
+  /* margin-top: 0.85rem; */
+  margin: 0;
+}
+
+.momos_container .card3 .card_section2 .buttons_section button {
   font-size: 2vw;
 }
 
