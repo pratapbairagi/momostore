@@ -2,8 +2,8 @@
 
 const Card1 = ({ details, buyBtnName, cartBtn, index = 0 }) => {
     return (
-        <div className="flex" style={{ flexDirection: "column", padding: "0" }}>
-            <div className="flex" style={{ flexDirection: "column" }}>
+        <div className="flex dualLine_card_container" style={{ flexDirection: "column", padding: "0" }}>
+            <div className="flex card_container" style={{ flexDirection: "column" }}>
                 {/* <div className="scroll_dots flex" style={{ padding: "0 1rem", gap: "1rem" }}>
                     <span style={{ width: "2rem", height: "1rem", backgroundColor: "#C82880", border: "2px solid white", boxShadow: " 0 0 0 1px #C82880", fontSize:"8px", textAlign:"center", color:"var(--bright-color-2)" }}>
                         Half
@@ -48,7 +48,7 @@ const Card1 = ({ details, buyBtnName, cartBtn, index = 0 }) => {
             </div>
 
 
-            <div className="flex" style={{ flexDirection: "column" }}>
+            <div className="flex card_container" style={{ flexDirection: "column" }}>
                 {/* <div className="scroll_dots flex" style={{ padding: "0 1rem", gap: "1rem" }}>
                     <span style={{ width: "1rem", height: "1rem", backgroundColor: "#C82880", border: "2px solid white", boxShadow: " 0 0 0 1px #C82880" }}></span>
                     <span style={{ width: "1rem", height: "1rem", backgroundColor: "#C82880" }}></span>

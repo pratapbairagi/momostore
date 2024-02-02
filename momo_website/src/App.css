@@ -105,12 +105,17 @@ body {
   grid-template-columns: repeat(2, 2fr);
 }
 
-.flex {
+.dualLine_card_container{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.flex .flex {
   display: flex;
   padding: 0 1rem;
-  row-gap: 0.5rem;
+  row-gap: 0rem;
   /* border: 1px solid red; */
-
 }
 
 /* nav */
@@ -1122,7 +1127,7 @@ body {
 }
 
  .scroll_btns {
-  width: 96%;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   gap: 2rem;
