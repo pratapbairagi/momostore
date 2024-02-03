@@ -724,7 +724,10 @@ body {
 }
 
 /* card2 */
-
+.momos_container .flex{
+  flex-direction: row;
+  overflow-x: auto;
+}
 .momos_container .card2{
   width: 100%;
   min-width: 100%;
@@ -735,9 +738,39 @@ body {
 }
 .momos_container .card2 .card_section2{
   gap: 1vw;
+  justify-content: center;
+  position: relative;
+}
+.momos_container .card2 .card_section2 .list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+.momos_container .card2 .card_section2 .list li{
+  font-size: 3.5vw;
+  font-family: var(--font-family-kenia);
+  color: #B2BBC6;
+}
+.momos_container .card2 .card_section2 img{
+  bottom: -40%;
+  position: absolute;
+  
 }
 .momos_container .card2 .card_section2 .price span{
   font-size: 5vw;
+  width: 9vw;
+}
+.momos_container .card2 .card_section2 .buttons_section button{
+  font-size: 4vw;
+  padding: 0.2rem 1rem;
+  border: 1px solid #C82880;
+}
+.momos_container .card2 .card_section2 .buttons_section button:nth-child(1){
+  background-color: transparent;
+  color: #C82880;
+  font-family: var(--font-family-kavoon);
 }
 
 /* card3 */
