@@ -11,7 +11,7 @@ const Card2 = ({ details, buyBtnName, cartBtn, index = 0 }) => {
 
                 <div className="flex" style={{ flexDirection: "row", overflowX: "auto", gap: "20%", padding: "1rem 0.3rem" }}>
                     {details.map((v, i) => {
-                        return <div key={i} className="card card1 card2" style={{ minWidth: "100%" }}>
+                        return <div key={i} className="card card1 card2">
                             <div className="card_section1" style={{ order: `${index % 2 == 0 ? "1" : "2"}` }}>
                                 <img src="/image/momos2.png" alt="chicken1" />
 
@@ -54,7 +54,7 @@ const Card2 = ({ details, buyBtnName, cartBtn, index = 0 }) => {
 
                 <div className="flex" style={{ flexDirection: "row", overflowX: "auto", gap: "20%", padding: "1rem 0.3rem" }}>
                     {details.map((v, i) => {
-                        return <div key={i} className="card card1 card2" style={{ minWidth: "100%" }}>
+                        return <div key={i} className="card card1 card2">
                             <div className="card_section1" style={{ order: `${index % 2 == 0 ? "1" : "2"}` }}>
                                 <img src="/image/momos2.png" alt="chicken1" />
 

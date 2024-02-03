@@ -11,11 +11,11 @@ const Card3 = ({ details, buyBtnName, cartBtn }) => {
 
         <div className="flex row">
             {details.map((v, i) => {
-                return <div key={i} className="card card2 card3">
-                    <div className="card_section1" style={{}}>
+                return <div key={i} className="card card3">
+                    <div className="card_section1" >
                         <img src="/image/momos2.png" alt="chicken1" />
                     </div>
-                    <div className="card_section2" style={{}}>
+                    <div className="card_section2">
                         <h5 className="title">{v?.type}</h5>
                         <div className="price"> <span>{v?.price}</span> </div>
                         <ul className="list">
@@ -54,14 +54,16 @@ const Card3 = ({ details, buyBtnName, cartBtn }) => {
         <div className="flex row">
             {details.map((v, i) => {
                 // return <div key={i} className="card card2 card3" style={{ minWidth: "100%" }}>
-                return <div key={i} className="card card2 card3">
+                return <div key={i} className="card card3">
                    
-                   <div className="card_section1" style={{}}>
+                   <div className="card_section1">
                         <img src="/image/momos2.png" alt="chicken1" />
+                        {/* <div className="price">{v?.price} </div> */}
+
                     </div>
-                    <div className="card_section2" style={{}}>
+                    <div className="card_section2">
                         <h5 className="title">{v?.type}</h5>
-                        <div className="price"> <span>{v?.price}</span> </div>
+                        {/* <div className="price"> <span>{v?.price}</span> </div> */}
                         <ul className="list">
                             {v?.list?.map((val, ind) => {
                                 return <li key={ind}>{val}</li>
