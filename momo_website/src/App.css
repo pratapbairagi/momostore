@@ -757,6 +757,9 @@ body {
   box-shadow: none;
   height: 95%;
 }
+.momos_container .card2 .card_section2 .title{
+  margin-top: 0.75vw;
+}
 .momos_container .card2 .card_section2 .list{
   display: flex;
   flex-direction: column;
