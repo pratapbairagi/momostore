@@ -711,7 +711,6 @@ body {
 }
 .momos_container .card .card_section2 .title{
   font-size: 5vw;
-  color: var(--theme-bright--color-2);
 }
 .momos_container .card1 .card_section2 .list{
   gap: 0.5vw;
@@ -794,7 +793,6 @@ body {
 }
 
 /* card3 */
-
 .momos_container .dualLine_card_container{
   position: relative;
   overflow: hidden;
@@ -862,12 +860,12 @@ body {
   border-radius: 50% !important;
 }
 .momos_container .card3 .card_section2{
-  gap: 2vw;
+  gap: 1.5vw;
   box-shadow: none;
   padding: 0.2rem 0;
 }
 .momos_container .card3 .card_section2 .title{
-  font-size: 5vw;
+  font-size: 4.5vw;
 }
 .momos_container .card3 .card_section2 .price span{
   font-size: 5vw;
@@ -887,8 +885,8 @@ body {
 }
 
 .momos_container .card3 .card_section2 .buttons_section button{
-  font-size: 4vw;
-  padding: 0.2rem 1rem;
+  font-size: 3vw;
+  padding: 0.1rem 1rem;
 }
 .momos_container .card3 .card_section2 .buttons_section button:nth-child(1){
   background-color: transparent;
