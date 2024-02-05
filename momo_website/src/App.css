@@ -709,8 +709,9 @@ body {
 .momos_container .card1 .card_section2{
   gap: 3.5vw;
 }
-.momos_container .card1 .card_section2 .title{
+.momos_container .card .card_section2 .title{
   font-size: 5vw;
+  color: var(--theme-bright--color-2);
 }
 .momos_container .card1 .card_section2 .list{
   gap: 0.5vw;
@@ -727,7 +728,10 @@ body {
   flex-direction: row;
   overflow-x: auto;
   padding: 0.5rem;
-  gap: 3rem;
+  /* gap: 3rem; */
+}
+.momos_container .dualLine_card_container .card_container .row{
+  gap: 2rem;
 }
 .momos_container .card2{
   width: 100%;
@@ -735,7 +739,6 @@ body {
   gap: 0.5rem;
  
   box-shadow: 2px 0 8px var(--bright-color-3);
-  /* border: 1px solid red; */
 }
 .momos_container .card2 .card_section1 img{
   height: 100%;
@@ -748,7 +751,7 @@ body {
   /* padding: 0.5rem 0; */
 }
 .momos_container .card2 .card_section2{
-  gap: 0.5rem;
+  gap: 0.25rem;
   display: flex;
   justify-content: center;
   position: relative;

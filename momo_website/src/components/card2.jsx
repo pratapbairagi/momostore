@@ -9,7 +9,7 @@ const Card2 = ({ details, buyBtnName, cartBtn, index = 0 }) => {
                     <span style={{ width: "1rem", height: "1rem", backgroundColor: "#C82880" }}></span>
                 </div> */}
 
-                <div className="flex">
+                <div className="flex row">
                     {details.map((v, i) => {
                         return <div key={i} className="card card2">
                             <div className="card_section1" style={{ order: `${index % 2 == 0 ? "1" : "2"}` }}>
