@@ -513,7 +513,6 @@ body {
   position: relative;
   width: 90%;
   aspect-ratio: 1/1;
-  border: 1px solid blue;
 }
 
 .special_container .grid .content .detail {
@@ -727,6 +726,7 @@ body {
 .momos_container .flex{
   flex-direction: row;
   overflow-x: auto;
+  padding: 0.5rem;
 }
 .momos_container .card2{
   width: 100%;
@@ -737,7 +737,7 @@ body {
   box-shadow: none;
 }
 .momos_container .card2 .card_section2{
-  gap: 1vw;
+  gap: 0.85vw;
   justify-content: center;
   position: relative;
 }
@@ -763,8 +763,8 @@ body {
   width: 9vw;
 }
 .momos_container .card2 .card_section2 .buttons_section button{
-  font-size: 4vw;
-  padding: 0.2rem 1rem;
+  font-size: 3vw;
+  padding: 0.15rem 1rem;
   border: 1px solid #C82880;
 }
 .momos_container .card2 .card_section2 .buttons_section button:nth-child(1){
