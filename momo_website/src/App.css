@@ -860,12 +860,17 @@ body {
   border-radius: 50% !important;
 }
 .momos_container .card3 .card_section2{
-  gap: 1.5vw;
+  gap: 1.75vw;
   box-shadow: none;
   padding: 0.2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .momos_container .card3 .card_section2 .title{
   font-size: 4.5vw;
+  margin-top: 0.5vw;
 }
 .momos_container .card3 .card_section2 .price span{
   font-size: 5vw;
@@ -885,8 +890,8 @@ body {
 }
 
 .momos_container .card3 .card_section2 .buttons_section button{
-  font-size: 3vw;
-  padding: 0.1rem 1rem;
+  font-size: 3.5vw;
+  padding: 0.15rem 0.9rem;
 }
 .momos_container .card3 .card_section2 .buttons_section button:nth-child(1){
   background-color: transparent;
