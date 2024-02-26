@@ -3,17 +3,21 @@
 const Card2 = ({ details, buyBtnName, cartBtn, index = 0 }) => {
     return (
         <div className="flex dualLine_card_container" style={{ flexDirection: "column", padding: "0" }}>
+            <img src="/image/veg2-removebg-preview.png" alt="veg2-removebg-preview.png" />
+            <img src="/image/veg2-removebg-preview.png" alt="veg2-removebg-preview.png" />
+            <img src="/image/veg2-removebg-preview.png" alt="veg2-removebg-preview.png" />
             <div className="flex card_container" style={{ flexDirection: "column" }}>
                 {/* <div className="scroll_dots flex" style={{ padding: "0 1rem", gap: "1rem" }}>
                     <span style={{ width: "1rem", height: "1rem", backgroundColor: "#C82880", border: "2px solid white", boxShadow: " 0 0 0 1px #C82880" }}></span>
                     <span style={{ width: "1rem", height: "1rem", backgroundColor: "#C82880" }}></span>
                 </div> */}
+                
 
                 <div className="flex row">
                     {details.map((v, i) => {
                         return <div key={i} className="card card2">
                             <div className="card_section1" style={{ order: `${index % 2 == 0 ? "1" : "2"}` }}>
-                                <img src="/image/momos2.png" alt="chicken1" />
+                                <img src="/image/veg_fry.jpg" alt="veg_fry.jpg" />
 
                             </div>
                             <div className="card_section2" style={{ order: `${index % 2 != 0 ? "1" : "2"}` }}>
@@ -56,7 +60,7 @@ const Card2 = ({ details, buyBtnName, cartBtn, index = 0 }) => {
                     {details.map((v, i) => {
                         return <div key={i} className="card card2">
                             <div className="card_section1" style={{ order: `${index % 2 == 0 ? "1" : "2"}` }}>
-                                <img src="/image/momos2.png" alt="chicken1" />
+                                <img src="/image/veg_momos.jpg" alt="veg_momos.jpg" />
 
                             </div>
                             <div className="card_section2" style={{ order: `${index % 2 != 0 ? "1" : "2"}` }}>

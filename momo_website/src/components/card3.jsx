@@ -12,7 +12,7 @@ const Card3 = ({ details, buyBtnName, cartBtn }) => {
                     {details.map((v, i) => {
                         return <div key={i} className="card card3">
                             <div className="card_section1" >
-                                <img src="/image/momos2.png" alt="chicken1" />
+                                <img src="/image/paneer_momos.jpg" alt="chicken1" />
                             </div>
                             <div className="card_section2">
                                 <h5 className="title">{v?.type}</h5>

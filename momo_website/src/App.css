@@ -621,7 +621,7 @@ body {
 }
 
 .momos_container .card1 .buttons_section button {
-  font-size: 3.75vw;
+  font-size: 3.5vw;
   font-weight: 500;
   color: #C82880;
   border: 1px solid #C82880;
@@ -1071,10 +1071,13 @@ body {
 }
 
 .momosTypes_container .grid {
+  display: flex;
   grid-template-columns: repeat(2, 47%);
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 8rem;
+  gap: 40vw;
+
 }
 
 .momosTypes_container > img {
@@ -1085,12 +1088,14 @@ body {
   opacity: 0.2;
 }
 
-.momosTypes_container .grid .section1 {
+.momosTypes_container .grid .section1,.momosTypes_container .grid .section2 {
   padding: 1rem;
+  max-width: 300px;
+  /* margin: 0 auto; */
 }
 
 .momosTypes_container .grid .section1 .box {
-  width: 100%;
+  width: 25vw;
   aspect-ratio: 1/0.8;
   position: relative;
   background-color: var(--bright-color-1);
@@ -1108,7 +1113,7 @@ body {
   font-family: var(--font-family-kavoon);
   color: #B2BBC6;
   text-align: center;
-  font-size: calc(var(--description-font-size) - 1px);
+  font-size: calc(var(--description-font-size) + 4px);
 }
 
 /* chatney section */
@@ -1177,7 +1182,7 @@ body {
   text-align: center;
   font-family: var(--font-family-kavoon);
   color: #B2BBC6;
-  font-size: calc(var(--description-font-size) - 1px);
+  font-size: calc(var(--description-font-size) + 4px);
 }
 
 /* testimonial */
@@ -1325,19 +1330,24 @@ body {
 
 .about_container .title,
 .about_container .description {
-  font-size: calc(var(--description-font-size) + 1px);
+  font-size: calc(var(--description-font-size) + 2px);
   font-family: var(--font-family-kavoon);
   color: #B2BBC6;
   letter-spacing: 1px;
   text-align: left;
   width: 100%;
-  margin-top: 3rem;
+  margin-top: 3.5rem;
+  font-weight: 500;
+
 }
 
 .about_container .description {
-  font-family: var(--font-family-kenia);
-  margin-top: 1rem;
-  letter-spacing: 0.5px;
+  /* font-family: var(--font-family-kenia); */
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 1.5rem;
+  letter-spacing: 0.3px;
+  font-size: clac( var(--mini-font-size) + 1px );
+  line-height: 130%;
 }
 
 .about_container h6 {
@@ -1348,6 +1358,7 @@ body {
   text-align: right;
   font-family: var(--font-family-kavoon);
   color: #B2BBC6;
+  font-weight: 500;
 }
 
 .about_container .grid {
@@ -1358,9 +1369,19 @@ body {
 }
 
 .about_container .grid .flex {
+  display: flex;
   flex-direction: column;
   row-gap: 2rem;
-  align-items: center;
+  column-gap: 2rem;
+  align-items: center ;
+  justify-content: center ;
+  padding:  0.5rem ;
+}
+
+.about_container .grid .flex img{
+  /* border: 1px solid red; */
+  padding: 0 !important;
+  object-fit: cover;
 }
 
 .about_container .grid .card {
@@ -1370,7 +1391,7 @@ body {
   border-bottom-left-radius: 400px;
   border-bottom-right-radius: 400px;
   background-color: var(--bright-color-2);
-  box-shadow: 2px 3px 4px var(--bright-color-4);
+  /* box-shadow: 2px 3px 4px var(--bright-color-4); */
 }
 
 .about_container .grid .subtitle {
@@ -1632,7 +1653,7 @@ body {
   
 }
 
-@media only screen and (min-width : 767px) {
+@media only screen and (min-width : 768px) {
   .hero_container{
     grid-template-columns: repeat(2, 1fr);
     gap: 1vw;
@@ -1716,15 +1737,15 @@ body {
   font-size: 3vw;
 }
 .momos_container .card1 .buttons_section button {
-  font-size: 2vw;
+  font-size: 2vw ;
 }
 
 /* card3 */
 .momos_container .card3 {
-  border-radius: 11vw;
-  border-top-left-radius: 0;
+  border-radius: 14vw;
+  border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+  /* border-bottom-left-radius: 0; */
   padding: 0 1.5vw;
   aspect-ratio: 1/0.55;
 }
@@ -1734,9 +1755,10 @@ body {
 }
 .momos_container .card3 .card_section2{
   gap: 1.5vw;
+  height: 90%;
 }
 .momos_container .card3 .card_section2 .title{
-  font-size: 3vw;
+  font-size: 2.75vw;
 }
 .momos_container .card3 .card_section2  .price span{
   font-size: 2vw;
@@ -1747,7 +1769,6 @@ body {
   height: 100%;
   overflow: visible;
   gap: 1.75vw;
-
 }
 
 .momos_container .card3 .card_section2 .list {
@@ -1760,7 +1781,7 @@ body {
   /* row-gap: 2px; */
 }
 .momos_container .card3 .card_section2 .list li{
-  font-size: 2vw;
+  font-size: 1.75vw;
   font-family: var(--font-family-kenia);
   color: #B2BBC6;
 }
@@ -1773,11 +1794,11 @@ body {
   /* border: 1px solid red; */
 }
 
-.momos_container .card3 .card_section2 img {
+/* .momos_container .card3 .card_section2 img {
   height: 130%;
   width: 130%;
   top: 15%;
-}
+} */
 
 .momos_container .card3 .card_section2 .buttons_section {
   /* margin-top: 0.85rem; */
@@ -1785,19 +1806,89 @@ body {
 }
 
 .momos_container .card3 .card_section2 .buttons_section button {
-  font-size: 2vw;
+  font-size: 1.85vw;
 }
 
 /* card2 */
 .momos_container .card2 {
-  border-radius: 11vw;
+  /* border-radius: 11vw; */
   border-top-left-radius: 0;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
-  padding: 0 1.5vw;
-  aspect-ratio: 1/0.55;
+  padding: 1rem !important;
+  justify-content: center;
+  aspect-ratio: 1/0.6;
+  align-items: center;
   width: 50%;
+  grid-template-columns: repeat(2, 50%);
+  /* min-width: initial; */
+
+  /* border: 1px solid red; */
+
 }
+.momos_container .card2 .card_section1,
+.momos_container .card2 .card_section2 {
+  height: 100%;
+  /* width: 108%; */
+  box-shadow: none;
+  position: relative;
+  /* border: 1px solid red; */
+
+  /* background-color: transparent; */
+}
+
+.momos_container .card2 .card_section2{
+  display: flex;
+  flex-direction: column;
+  gap: 1.25vw;
+}
+
+.momos_container .card2 .card_section1 img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  /* margin-top: 2%; */
+}
+
+/* .momos_container .card2 .card_section2 .title {
+  font-size: 5vw;
+  color: #FACDE6;
+} */
+
+.momos_container .card2 .card_section2 .list {
+  gap: 0;
+}
+.momos_container .card2 .card_section2 .list li{
+  font-size: 2vw;
+}
+
+.momos_container .card2 .card_section2 .price {
+  width: 100%;
+  justify-content: center;
+}
+
+.momos_container .card2 .card_section2 .price span {
+  text-align: center;
+  font-size: 2.5vw;
+  width: 5vw;
+}
+
+.momos_container .card2 .card_section2 .buttons_section {
+  height: max-content;
+  margin: 0;
+}
+
+.momos_container .card2 .card_section2 .buttons_section button {
+  font-size: 2.25vw;
+  padding: 0.15vw 2vw;
+}
+
+/* .momos_container .card2 .card_section2 img {
+  top: 30%;
+  width: 100%;
+  height: 100%;
+} */
+
 
   /* special */
   .special_container .grid{
@@ -1835,7 +1926,7 @@ body {
 
 @media only screen and (min-width : 860px) {
   /* special */
-  .special_container .grid{
+  /* .special_container .grid{
     grid-template-columns: repeat(3, 1fr);
   }
   .special_container .grid .content{
@@ -1851,5 +1942,10 @@ body {
   }
   .special_container .grid .content:nth-child(2) h4{
     font-size: 2vw;
-  }
+  } */
+
+  /* .momos_container .card3 {
+    max-width: 300px !important;
+    min-width: initial;
+  }   */
 }

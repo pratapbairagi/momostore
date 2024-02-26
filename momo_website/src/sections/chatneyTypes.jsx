@@ -5,7 +5,7 @@ const ChatneyTypes = ({ clss = "", title = "", background = "" }) => {
     let chatney = [
         { image: "/image/chatney1.png", info: "Our delivery facility makes every momo lover happy" },
         { image: "/image/chatney2.png", info: "Our delivery facility makes every momo lover happy" },
-        { image: "/image/chatney3.png", info: "Oue delivery facility makes every momo lover happy" }
+        { image: "/image/chateny3.png", info: "Oue delivery facility makes every momo lover happy" }
     ]
     return (
         <div className="container chatneyTypes_container" style={{ backgroundColor: `${background}` }}>

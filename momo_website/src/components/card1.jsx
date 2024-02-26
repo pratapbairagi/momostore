@@ -3,6 +3,9 @@
 const Card1 = ({ details, buyBtnName, cartBtn, index = 0 }) => {
     return (
         <div className="flex dualLine_card_container" style={{ flexDirection: "column", padding: "0" }}>
+            <img src="/image/chicken1.png" alt="chicken1.png" />
+            <img src="/image/chicken1.png" alt="chicken1.png" />
+            <img src="/image/chicken1.png" alt="chicken1.png" />
             <div className="flex card_container" style={{ flexDirection: "column" }}>
                 {/* <div className="scroll_dots flex" style={{ padding: "0 1rem", gap: "1rem" }}>
                     <span style={{ width: "2rem", height: "1rem", backgroundColor: "#C82880", border: "2px solid white", boxShadow: " 0 0 0 1px #C82880", fontSize:"8px", textAlign:"center", color:"var(--bright-color-2)" }}>
@@ -15,7 +18,7 @@ const Card1 = ({ details, buyBtnName, cartBtn, index = 0 }) => {
                     {details.map((v, i) => {
                         return <div className="card card1">
                             <div className="card_section1">
-                                <img src="/image/chicken1.png" alt="chicken1" />
+                                <img src="/image/chicken_fry.jpg" alt="chicken_fry.jpg" />
                                 <div className="buttons_section">
                                     <button>{buyBtnName}</button>
                                     <button> {cartBtn} </button>
@@ -58,7 +61,7 @@ const Card1 = ({ details, buyBtnName, cartBtn, index = 0 }) => {
                     {details.map((v, i) => {
                         return <div className="card card1">
                             <div className="card_section1">
-                                <img src="/image/chicken1.png" alt="chicken1" />
+                                <img src="/image/chicken_momos.png" alt="chicken_momos.png" />
                                 <div className="buttons_section">
                                     <button>{buyBtnName}</button>
                                     <button> {cartBtn} </button>
